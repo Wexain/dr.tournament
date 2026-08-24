@@ -1,0 +1,41 @@
+# Build
+build/
+cmake-build-*/
+out/
+.vs/
+*.obj
+*.o
+*.a
+*.lib
+*.exe
+*.dll
+*.so
+*.apk
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+CMakeUserPresets.json
+
+# Dependencies (fetched by CMake)
+_deps/
+
+# Runtime
+settings.json
+profile.json
+friends.json
+economy.json
+*.log
+
+# Android
+platform/android/.gradle/
+platform/android/app/build/
+platform/android/local.properties
+platform/android/gradle/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -80,9 +80,7 @@ jobs:
 
       - name: Build APK with Gradle
         working-directory: platform/android
-        run: |
-          chmod +x gradlew
-          ./gradlew assembleRelease
+        run: gradle assembleRelease
 
       - uses: actions/upload-artifact@v4
         with:

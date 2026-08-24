@@ -4,6 +4,7 @@
 // ═══════════════════════════════════════════════════════════════════════════
 #include <cstdint>
 #include <string>
+#include <algorithm>
 
 namespace drt {
 
@@ -20,11 +21,11 @@ public:
     void applyDefaults();
 
     // Host rule configuration
-    void setLaneCount(int lanes)           { lane_count_ = Clamp(lanes, 1, 6); }
+    void setLaneCount(int lanes)           { lane_count_ = std::clamp(lanes, 1, 6); }
     void setSpecLock(bool on)              { spec_lock_ = on; }
     void setTransmissionLock(bool on)      { transmission_lock_ = on; }
     void setZeroToleranceDNF(bool on)      { zero_tolerance_ = on; }
-    void setTrafficDensity(float pct)      { traffic_density_ = Clamp(pct, 0.0f, 1.0f); }
+    void setTrafficDensity(float pct)      { traffic_density_ = std::clamp(pct, 0.0f, 1.0f); }
     void setSurfaceFriction(float f)       { surface_friction_ = f; }
     void setForcedCar(uint8_t model)       { forced_car_ = model; }
 

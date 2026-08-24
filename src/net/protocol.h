@@ -84,9 +84,8 @@ struct StatePacket {
     uint8_t    flags;  // bit 0 = left_ind, bit 1 = right_ind, bit 2 = hazards,
                        // bit 3 = reverse_light, bit 4 = horn
     uint16_t   speed_cmps;  // Speed in cm/s (uint16 enough for driving game)
-    
-    static constexpr size_t SIZE = sizeof(StatePacket);
 };
+constexpr size_t STATE_PACKET_SIZE = sizeof(StatePacket);
 #pragma pack(pop)
 
 // ── Room Configuration ─────────────────────────────────────────────────────

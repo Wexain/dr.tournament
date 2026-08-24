@@ -122,6 +122,7 @@ set(DRT_SHARED_SOURCES
 add_library(drt_game STATIC ${DRT_SHARED_SOURCES})
 target_include_directories(drt_game PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${enet_SOURCE_DIR}/include
 )
 target_link_libraries(drt_game PUBLIC
     raylib

@@ -67,6 +67,7 @@ public:
     
     // Configuration
     EngineTorqueCurve& torqueCurve() { return torque_curve_; }
+    const EngineTorqueCurve& torqueCurve() const { return torque_curve_; }
     GearRatios&        gearRatios()  { return gear_ratios_; }
 
     // For display

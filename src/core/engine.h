@@ -65,13 +65,15 @@ public:
     InputSystem&       input()       { return input_; }
     CameraSystem&      camera()      { return camera_; }
     Settings&          settings()    { return settings_; }
+    const Settings&    settings() const  { return settings_; }
     RoadGenerator&     road()        { return road_; }
     TrafficAI&         traffic()     { return traffic_; }
     Environment&       env()         { return env_; }
     VehicleRenderer&   vehRenderer() { return veh_renderer_; }
     HUD&               hud()         { return hud_; }
     PostFX&            fx()          { return fx_; }
-    ENetClient&        netClient()   { return net_client_; }
+    ENetClient&        netClient()       { return net_client_; }
+    const ENetClient&  netClient() const { return net_client_; }
     AuthSystem&        auth()        { return auth_; }
     Economy&           economy()     { return economy_; }
     TournamentRules&   rules()       { return rules_; }

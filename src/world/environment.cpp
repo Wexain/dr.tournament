@@ -68,10 +68,10 @@ void Environment::renderRoadsideProps(Vector3 camera_pos) {
         float z = camera_pos.z + i * 30.0f;
         // Left side
         DrawCylinder({-20.0f, 0, z}, 0.3f, 0.3f, 2.0f, 6, {80, 50, 30, 255});
-        DrawCone({-20.0f, 2.0f, z}, 2.0f, 3.0f, 6, {30, 100, 30, 255});
+        DrawCylinder({-20.0f, 2.0f, z}, 0.0f, 2.0f, 3.0f, 6, {30, 100, 30, 255});
         // Right side
         DrawCylinder({20.0f, 0, z}, 0.3f, 0.3f, 2.0f, 6, {80, 50, 30, 255});
-        DrawCone({20.0f, 2.0f, z}, 2.0f, 3.0f, 6, {30, 100, 30, 255});
+        DrawCylinder({20.0f, 2.0f, z}, 0.0f, 2.0f, 3.0f, 6, {30, 100, 30, 255});
     }
 }
 

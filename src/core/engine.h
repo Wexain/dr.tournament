@@ -98,9 +98,9 @@ public:
 
     // Multiplayer ghost vehicles
     struct GhostVehicle {
-        Vector3    position{};
-        Quaternion rotation{};
-        Vector3    velocity{};
+        Vector3    position = {0, 0, 0};
+        Quaternion rotation = {0, 0, 0, 0};
+        Vector3    velocity = {0, 0, 0};
         uint8_t    gear = 0;
         bool       left_indicator  = false;
         bool       right_indicator = false;

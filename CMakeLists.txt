@@ -174,7 +174,7 @@ endif()
 if(MSVC)
     target_compile_options(drt_game PRIVATE /W4 /permissive-)
 else()
-    target_compile_options(drt_game PRIVATE -Wall -Wextra -Wpedantic)
+    target_compile_options(drt_game PRIVATE -Wall -Wextra -Wpedantic -Wno-missing-field-initializers -Wno-unused-parameter)
 endif()
 
 message(STATUS "═══════════════════════════════════════════════════")

@@ -4,6 +4,7 @@
 // ═══════════════════════════════════════════════════════════════════════════
 #include <cstdint>
 #include <cmath>
+#include <array>
 
 namespace drt {
 
@@ -39,7 +40,7 @@ struct EngineTorqueCurve {
 
 struct GearRatios {
     float reverse  = -3.2f;
-    float drive[6] = {3.8f, 2.5f, 1.7f, 1.2f, 0.9f, 0.75f};
+    std::array<float, 6> drive = {{3.8f, 2.5f, 1.7f, 1.2f, 0.9f, 0.75f}};
     float final_drive = 3.5f;
     int   num_forward_gears = 6;
 };
